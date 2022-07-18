@@ -1,0 +1,38 @@
+.cards_container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat( auto-fill, minmax(300px, 1fr) );
+  width: 100%;
+}
+.card {
+  overflow: hidden;
+  transition: .3s ease;
+}
+/* .card:hover {
+  box-shadow: 0px 3px 16px 8px rgba(190, 190, 190, 0.212);
+} */
+.card .header {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.card .header .name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+}
+.card .details {
+  padding: 20px;
+  color: #777;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-size: 14px;
+}
+
+/* Start Mobile Design */
+@media(max-width: 600px) {
+  .cards_container {
+    grid-template-columns: repeat( auto-fill, minmax(200px, 1fr) );
+  }
+}
+/* End Mobile Design */

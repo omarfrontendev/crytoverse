@@ -1,0 +1,79 @@
+body  {
+  font-family: 'Almarai', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background: #bababa21;
+  transition: .3s ease;
+}
+:root {
+  --dark-color: #000626;
+  --blue-light-color: #b8dbdf;
+  --gray-color: #a09797;
+  --trxt-light-color: #0097a8;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  list-style: none;
+  text-decoration: none;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex.space_between {
+  justify-content: space-between;
+}
+.title {
+  color: #444;
+  margin-bottom: 20px;
+}
+.select_box {
+  position: relative;
+  max-width: 300px;
+  width: fit-content;
+}
+select {
+  appearance: none;
+  border: 1px solid #ddd;
+  color: var(--gray-color);
+  border-radius: 5px;
+  padding: 1em;
+  width: 100%;
+  cursor: pointer;
+  min-width: 100px;
+}
+select:focus {
+  color: var(--blue-light-color);
+  border-color: var(--blue-light-color);
+}
+.select_box::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-color: var(--blue-light-color) transparent transparent transparent;
+  transform: translateY(-2px);
+  pointer-events: none;
+}
+/* start Media At Mobile  */
+@media(max-width: 600px) {
+  .title {
+    font-size: 18px;
+  }
+}
+/* End Media At Mobile  */
