@@ -1,5 +1,4 @@
 {
-  "homepage": "http://omarfrontendev.github.io/crytoverse",
   "name": "crytoverse",
   "version": "0.1.0",
   "private": true,
@@ -22,9 +21,7 @@
     "react-transition-group": "^4.4.2",
     "recharts": "^2.1.10",
     "styled-components": "^5.3.5",
-    "web-vitals": "^2.1.4",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
